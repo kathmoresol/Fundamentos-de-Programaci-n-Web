@@ -8,7 +8,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     var contrasena = document.getElementsByName("contrasena")[0].value;
 
     if (usuario === nombre && contrasena === contraseña) {
-        location.href = "../landing.html";
+        location.href = "landing.html";
     } else {
         alert("Usuario o contraseña incorrectos");
     }

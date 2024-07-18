@@ -1,0 +1,42 @@
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+#container {
+    width: 2000px;
+    height: 650px;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+header {
+    padding: 30px;
+    width: 100%;
+    height: 10vh;
+}
+
+footer {
+    padding: 45px;
+    height: 10vh;
+    background-color: #efe1e9;
+}
+
+header h1 {
+    text-align: center;
+}
+
+footer h2 {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+}
+
+.background {
+    background-color: #101011;
+}
+.color{
+    color: rgb(225, 96, 195);
+}

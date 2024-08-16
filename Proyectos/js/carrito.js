@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let total = 0;
 
     // Mostrar productos en el carrito
+    console.log(carrito)
     carrito.forEach(producto => {
         const item = document.createElement('div');
         item.className = 'col-md-4 mb-4';
@@ -13,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${producto.image}" class="card-img-top" alt="${producto.title}">
                 <div class="card-body">
                     <h5 class="card-title">${producto.title}</h5>
-                    <p class="card-text">$${producto.price.toFixed(2)}</p>
+                    <p class="card-text">$${producto.price}</p>
                     <button class="boton" style="font-size: 20px" onclick="eliminarProducto('${producto.id}')">Eliminar</button>
                 </div>
             </div>

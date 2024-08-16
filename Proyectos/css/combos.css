@@ -1,0 +1,45 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #3e3d3d;
+}
+
+.combo-section {
+    margin-bottom: 40px;
+}
+
+.combo-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    margin-bottom: 15px;
+}
+
+.combo-image {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.combo-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#interactivoButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique - Lightbox Fotográfico y de Videos</title>
+
+    <!-- Lightbox2 CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- FancyBox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Galería de Fotos</h1>
+        <div class="gallery">
+            <a href="imagenes/vestido7.jpg" data-lightbox="gallery" data-title="Vestido Elegante">
+                <img src="imagenes/vestido7.jpg" alt="Vestido Elegante" class="img-thumbnail">
+            </a>
+            <a href="imagenes/zapatos.jpg" data-lightbox="gallery" data-title="Zapatos de Fiesta">
+                <img src="imagenes/zapatos.jpg" alt="Zapatos de Fiesta" class="img-thumbnail">
+            </a>
+            <a href="imagenes/bolso3.jpg" data-lightbox="gallery" data-title="Bolso de Cuero">
+                <img src="imagenes/bolso3.jpg" alt="Bolso de Cuero" class="img-thumbnail">
+            </a>
+        </div>
+
+        <h1 class="text-center mt-5">Galería de Videos</h1>
+        <div class="video-gallery">
+            <a data-fancybox="gallery" href="https://www.youtube.com/embed/l0g97M_k4SE&t=2s">
+                <img src="imagenes/img1.jpg" alt="Video Presentación" class="video-thumbnail">
+                <span class="play-icon">&#9658;</span>
+            </a>
+            <a data-fancybox="gallery" href="https://www.youtube.com/embed/mZLLmwgM6oQ">
+                <img src="imagenes/img4.jpg" alt="Video Tutorial" class="video-thumbnail">
+                <span class="play-icon">&#9658;</span>
+            </a>
+        </div>
+    </div>
+
+    <footer class="p-4 text-center fondo1">
+        <h4>© 2024 Boutique. Todos los derechos reservados.</h4>
+    </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FancyBox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

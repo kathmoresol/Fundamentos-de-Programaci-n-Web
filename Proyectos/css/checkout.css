@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  .navbar a.nav-option {
+    color: #ffffff;
+  }
+  
+  .navbar a.nav-option:hover {
+    color: #f8f9fa;
+  }
+  
+  .product-card {
+    margin-bottom: 1rem;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+  }
+  
+  .btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  footer h4 {
+    margin: 0;
+  }
+  

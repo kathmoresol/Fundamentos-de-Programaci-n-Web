@@ -1,0 +1,68 @@
+.titulo1 {
+  font-weight: bolder;
+  margin-top: 200px;
+}
+
+.titulo2 {
+  font-size: 40px;
+  color: #552129;
+}
+
+.titulo3 {
+  color: #552129;
+  font-size: 50px;
+}
+
+.banner1 {
+  background-image: url("../imagenes/img7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 200px 20px;
+  text-align: center;
+  height: 950px; 
+ 
+
+}
+
+.fondo1 {
+  background-color: #FFC0CB;
+}
+
+/* tamano especificos de contenedores*/
+
+.container-fluid1 {
+  padding-top: 210px;
+  padding-bottom: 200px;
+}
+
+.container-fluid2 {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.container-fluid3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.container-fluid4 {
+  padding-top: 140px;
+  padding-bottom: 140;
+}
+
+.container-fluid5 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.container-fluid6 {
+  padding-top: 0px;
+  padding-bottom: 30px;
+}
+
+img {
+  object-fit: cover;
+  height: 150px;
+  margin-bottom: 12px;
+}

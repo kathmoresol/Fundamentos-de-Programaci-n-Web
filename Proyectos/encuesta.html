@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <!----ajustar contenido de pantalla cellular--->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Plantilla Web</title>
+  <!----carga del framework css bootstrap CDN--->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+  <!-- FancyBox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="css/tienda.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+</head>
+
+<body class="p-0">
+  <header>
+    <nav class="navbar">
+      <div class="d-flex justify-content-between align-items-center container-fluid position=relative">
+        <a class="navbar-brand mx-5" href="#">Opulence Boutique</a>
+        <ul>
+          <li><a class="nav-option" href="inicio.html">Inicio</a></li>
+          <li><a class="nav-option" href="coleccion.html">Colección</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-option" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Paginas
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item nav-option" href="categorias.html"> Categorias</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item nav-option" href="testimonioConta.html">Testimonios y Estadisticas</a></li>
+              <li><a class="dropdown-item nav-option" href="objeto3d.html">Figura 3D</a></li>
+              <li>
+                <a class="dropdown-item nav-option" href="encuesta.html">Encuesta</a>
+              </li>
+              <li>
+                <a class="dropdown-item nav-option" href="sobreNosotros.html">Sobre Nosotros</a>
+              </li>
+            </ul>
+          </li>
+          <li><a class="nav-option" href="landing.html">Proyectos</a></li>
+          <li><a class="nav-option" href="index.html">Salir</a></li>
+        </ul>
+        <div class="icon-container">
+          <a href="carrito.html" class="icon" aria-label="Ir al carrito">
+            <i class="uil uil-shopping-cart-alt"></i>
+          </a>
+          <a href="/buscadorPrendas.html" class="icon" aria-label="Buscar prendas">
+            <i class="uil uil-search"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="satisfaction-survey row justify-content-center pt-140 text-center">
+    <div class="col-md-6">
+      <h2 class="text-center mt-5">Encuesta Satisfacción</h2>
+      <form id="satisfaction-survey-form" class="mt-4 text-center">
+
+        <div class="form-group mb-5">
+          <label>¿Cómo calificarías la calidad de nuestros productos?</label>
+          <select class="form-control" name="mensaje1" required>
+            <option value="Excelente">Excelente</option>
+            <option value="Buena">Buena</option>
+            <option value="Regular">Regular</option>
+            <option value="Mala">Mala</option>
+          </select>
+        </div>
+
+        <div class="form-group mb-5">
+          <label>¿Qué tan satisfecho(a) estás con la atención al cliente recibida en nuestra boutique?</label>
+          <select class="form-control" name="mensaje2" required>
+            <option value="Muy satisfecho(a)">Muy satisfecho(a)</option>
+            <option value="Satisfecho(a)">Satisfecho(a)</option>
+            <option value="Neutral">Neutral</option>
+            <option value="Insatisfecho(a)">Insatisfecho(a)</option>
+            <option value="Muy insatisfecho(a)">Muy insatisfecho(a)</option>
+          </select>
+        </div>
+
+        <div class="form-group mb-5">
+          <label>¿Cómo evaluarías la variedad de productos disponibles en nuestra boutique?</label>
+          <select class="form-control" name="mensaje3" required>
+            <option value="Muy amplia">Muy amplia</option>
+            <option value="Amplia">Amplia</option>
+            <option value="Adecuada">Adecuada</option>
+            <option value="Limitada">Limitada</option>
+            <option value="Muy limitada">Muy limitada</option>
+          </select>
+        </div>
+
+        <div class="form-group mb-5">
+          <label>¿Qué tan probable es que recomiendes nuestra boutique a tus amigos y familiares?</label>
+          <select class="form-control" name="mensaje4" required>
+            <option value="Muy probable">Muy probable</option>
+            <option value="Probable">Probable</option>
+            <option value="No estoy seguro(a)">No estoy seguro(a)</option>
+            <option value="Poco probable">Poco probable</option>
+            <option value="Nada probable">Nada probable</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje5">¿Tienes alguna sugerencia o comentario que nos ayude a mejorar tu experiencia de
+            compra?</label>
+          <textarea class="form-control" id="mensaje5" name="mensaje5" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="boton w-100">Enviar</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="pt-140"></div>
+  <div class="pt-140"></div>
+
+  <footer class="p-4 text-center fondo1">
+    <h4>© 2024 Boutique. Todos los derechos reservados.</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="js/encuesta.js"></script>
+  <script src="js/tira-fotografica.js"></script>
+  <!-- Lightbox2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- FancyBox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

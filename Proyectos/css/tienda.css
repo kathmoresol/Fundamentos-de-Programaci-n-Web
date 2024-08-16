@@ -1,0 +1,187 @@
+/* Estilos Generales */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Estilos del Header */
+header {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+/* Estilos del Carrusel */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel {
+  height: 950px;
+  /* Permite que la altura se ajuste al contenido */
+  overflow: hidden;
+  /* Asegura que el contenido no se desborde */
+}
+
+
+
+
+.carousel-indicators [data-bs-target] {
+  background-color: #343a40;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #343a40;
+  border-radius: 50%;
+}
+
+/* Estilos del Main */
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+main label {
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+main select {
+  font-size: 1rem;
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+main select:focus {
+  border-color: #FFC0CB;
+  box-shadow: 0 0 0 0.2rem rgba(255, 7, 197, 0.706);
+}
+
+/* Estilos del Owl Carousel */
+
+.owl-wrapper {
+  display: flex !important;
+  width: 100% !important;
+}
+
+.owl-carousel .item {
+  margin: 10px;
+  width: 250px;
+  height: 150px;
+}
+
+.owl-carousel .item img {
+  display: block;
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);
+  /* IE8 and earlier */
+  opacity: 0.5;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.banner-section {
+  background-image: url("../imagenes/sale4.jpg");
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 200px 20px;
+  text-align: center;
+}
+
+.categories-section {
+  padding: 20px;
+  background-color: #f4f4f4;
+  /* Color de fondo opcional */
+}
+
+.category {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 22px;
+}
+
+.category img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.category:hover img {
+  transform: scale(1.1);
+  /* Escala la imagen al pasar el ratón */
+}
+
+.category h3 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #3e3d3d;
+  background: #FFC0CB;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0;
+}

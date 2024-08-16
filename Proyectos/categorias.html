@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.png">
+    <!----carga del framework css bootstrap CDN--->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+
+  <!-- Lightbox2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- FancyBox CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  <!-- Icon Styles -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <link rel="stylesheet" href="css/categorias.css">
+  <link rel="stylesheet" href="css/main.css" />
+
+  <title>Fashion Boutique</title>
+</head>
+
+<body id="inicio" class="p-0">
+
+  <nav class="navbar">
+    <div class="d-flex justify-content-between align-items-center container-fluid position=relative">
+      <a class="navbar-brand mx-5" href="#">Opulence Boutique</a>
+      <ul>
+        <li><a class="nav-option" href="inicio.html">Inicio</a></li>
+        <li><a class="nav-option" href="coleccion.html">Colección</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-option" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Paginas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item nav-option" href="categorias.html"> Categorias</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item nav-option" href="testimonioConta.html">Testimonios y Estadisticas</a></li>
+            <li><a class="dropdown-item nav-option" href="objeto3d.html">Figura 3D</a></li>
+            <li>
+              <a class="dropdown-item nav-option" href="encuesta.html">Encuesta</a>
+            </li>
+            <li>
+              <a class="dropdown-item nav-option" href="sobreNosotros.html">Sobre Nosotros</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-option" href="landing.html">Proyectos</a></li>
+        <li><a class="nav-option" href="index.html">Salir</a></li>
+      </ul>
+      <div class="icon-container d-flex">
+        <select id="language-select" class="form-select mx-4" aria-label="Cambiar idioma">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>
+        </select>
+        <a href="carrito.html" class="icon" aria-label="Ir al carrito">
+          <i class="uil uil-shopping-cart-alt"></i>
+        </a>
+        <a href="/buscadorPrendas.html" class="icon" aria-label="Buscar prendas">
+          <i class="uil uil-search"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!--inicio seccion galeria-->
+  <section class="container-fluid pt-140">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h2 class="display-2 pt-5 text-danger titulo mb-5">Catálogo Dinámico</h2>
+        </div>
+
+        <div class="col-12">
+
+          <select name="menuOpciones" id="menuOpciones" class="form-select form-select-lg mb-5">
+            <option value="" class="opcion0">Seleccionar una categoría</option>
+            <option value="ropa" class="opcion1">Ropa</option>
+            <option value="zapatos" class="opcion2">Zapatos</option>
+            <option value="accesorios" class="opcion3">Accesorios</option>
+            <option value="bolsos" class="opcion4">Bolsos</option>
+            <option value="joyeria" class="opcion5">Joyería</option>
+            <option value="novedades" class="opcion6">Novedades</option>
+          </select>
+        </div>
+      </div>
+
+      <!---ROPA -->
+      <div class="galeriaRopa galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/vestidos.jpg">
+                <img src="imagenes/vestidos.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Vestido </h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/blusas.jpg">
+                <img src="imagenes/blusas.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Camiseta </h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/pantalones.jpg">
+                <img src="imagenes/pantalones.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Pantalón </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ZAPATOS -->
+      <div class="galeriaZapatos galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/tacon1.jpg">
+                <img src="imagenes/tacon1.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Zapatos de Tacón</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/botas.jpg">
+                <img src="imagenes/botas.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Botas de Cuero</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/tenisdeport.jpg">
+                <img src="imagenes/tenisdeport.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Zapatillas Deportivas</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACCESORIOS -->
+      <div class="galeriaAccesorios galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/sombrero.jpg">
+                <img src="imagenes/sombrero.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Sombrero de Paja</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/bufanda.jpg">
+                <img src="imagenes/bufanda.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Bufanda de Lana</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/gafas.jpg">
+                <img src="imagenes/gafas.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Gafas de Sol</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BOLSOS -->
+      <div class="galeriaBolsos galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/carteramano.jpg">
+                <img src="imagenes/carteramano.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Bolso de Mano</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/bolso3.jpg">
+                <img src="imagenes/bolso3.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Mochila Casual</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/carteraelegabte.jpg">
+                <img src="imagenes/carteraelegabte.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Cartera Elegante</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JOYERÍA -->
+      <div class="galeriaJoyeria galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/collaroro.jpg">
+                <img src="imagenes/collaroro.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Collar de Oro</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/pulceraplata.jpg">
+                <img src="imagenes/pulceraplata.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Pulsera de Plata</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/anillodia2.jpg">
+                <img src="imagenes/anillodia2.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Anillo de Diamantes</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NOVEDADES -->
+      <div class="galeriaNovedades galeriaFotos fondo-categories mb-5">
+        <div class="tz-gallery">
+          <div class="row text-center">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/sombrero2.jpg">
+                <img src="imagenes/sombrero2.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Sombrero de Fieltro</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/faja.jpg">
+                <img src="imagenes/faja.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Cinturón de Cuero</h3>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+              <a class="" href="imagenes/gorra.jpg">
+                <img src="imagenes/gorra.jpg" class="img-fluid">
+              </a>
+              <div class="">
+                <h3 class="pt-2 text-dark">Gorra Deportiva</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="p-4 text-center fondo1">
+    <h4>© 2024 Boutique. Todos los derechos reservados.</h4>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+  <script src="js/categorias.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4+1h91+QSRFjtCaedrC3Oq6b1J6Y+7Xkk+H28anvfF0T00p5rF1kM29"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.fondo {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+  color: #ffffff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.fondo-categories {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+  color: #ffffff;
+}
+
+.inicio {
+  background-image: url('../imagenes/img1.jpg');
+}
+
+.inicio-box {
+  z-index: 2;
+}
+
+.login {
+  background-image: url('../imagenes/img5.jpg');
+}
+
+.landing {
+  background-image: url('../imagenes/img4.jpg');
+}
+
+.opacidad {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.navbar {
+  z-index: 3;
+  background-color: #FFC0CB;
+  color: #FFC0CB;
+  font-weight: bold;
+  padding: 20px 0;
+  font-size: 24px;
+  position: fixed;
+  width: 100%;
+}
+
+.pt-140 {
+  padding-top: 140px;
+}
+
+.navbar ul li a {
+  color: #3e3d3d;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-option:hover {
+  color: white;
+}
+
+.navbar-brand {
+  color: #3e3d3d;
+  font-size: 24px;
+  transition: all 0.3s;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+nav ul {
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+.icon {
+  display: inline-flex;
+  /* Asegura que el enlace se comporte como un contenedor de ícono */
+  align-items: center;
+  /* Centra el ícono dentro del enlace */
+  justify-content: center;
+  /* Centra el ícono dentro del enlace */
+  width: 40px;
+  /* Ajusta el tamaño del botón */
+  height: 40px;
+  /* Ajusta el tamaño del botón */
+  text-decoration: none;
+  /* Elimina el subrayado del enlace */
+  color: #3e3d3d;
+  /* Ajusta el color del ícono */
+  background: transparent;
+  /* Fondo transparente para el enlace */
+  border: none;
+  /* Elimina el borde del enlace */
+  cursor: pointer;
+  /* Muestra el cursor de mano al pasar sobre el enlace */
+  transition: color 0.3s;
+  /* Añade una transición suave para cambios de color */
+}
+
+.icon:hover {
+  color:white;
+  /* Cambia el color del ícono al pasar el ratón sobre él */
+}
+
+.icon {
+  font-size: 36px;
+  font-weight: bold;
+  margin-right: 30px;
+  /* Ajusta el tamaño del ícono según tus necesidades */
+}
+
+.titulo {
+  z-index: 3;
+  font-size: 50px;
+  text-align: center;
+}
+
+.subtitulo {
+  z-index: 3;
+  font-size: 32px;
+  text-align: center;
+  color: #3e3d3d;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
+body .nav-link.active {
+  color: #FFC0CB !important;
+}
+
+.input {
+  width: 100%;
+  height: 60px;
+  padding: 10px;
+  background: #f0f0f0;
+  border: none;
+  outline: none;
+  color: #3e3d3d;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.boton {
+  display: block;
+  padding: 10px 20px;
+  background-color: #f89aaa;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  width: 200px;
+  font-size: 28px;
+  z-index: 3;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.boton-largo {
+  width: 300px;
+}
+
+.boton-mas-largo {
+  width: 600px;
+}
+
+.boton:hover {
+  background-color: #f6c2cb;
+}
+
+.box {
+  position: relative;
+  width: 300px;
+  z-index: 3 !important;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galeria {
+  padding: 140px 0 0;
+}
+
+.gallery, .video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.img-thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.img-thumbnail:hover {
+  transform: scale(1.05);
+}
+
+.video-thumbnail {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 5px;
+  position: relative;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  pointer-events: none;
+}
+
+.lightbox .lightbox-close {
+  background: url('https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/images/close.png') no-repeat center center;
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-size: contain;
+}
+
+/* Ajusta el estilo si el botón no se muestra */
+.lightbox .lightbox-image {
+  position: relative;
+
+}
+
+.lightbox .lightbox-close:hover {
+  opacity: 0.8;
+}
+
+
+footer {
+  background-color: #FFC0CB;
+  color:#3e3d3d;
+  font-weight: bold;
+  margin-top: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.form-control {
+  margin-left: 0;
+  border: 2px solid #f0f0f0;
+}
+
+#contact-form .form-control{
+  margin: unset;
+}
+
+.form-control label {
+  margin-bottom: 30px;
+}
+
+.form-group,
+.form-group label {
+  margin-bottom: 30px;
+}

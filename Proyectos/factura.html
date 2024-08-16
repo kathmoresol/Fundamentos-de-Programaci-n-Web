@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comprobante de Pedido</title>
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+  <link rel="stylesheet" href="css/main.css"> <!-- Enlace al archivo CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="d-flex justify-content-between align-items-center container-fluid position=relative">
+      <a class="navbar-brand mx-5" href="#">Opulence Boutique</a>
+      <ul>
+        <li><a class="nav-option" href="inicio.html">Inicio</a></li>
+        <li><a class="nav-option" href="coleccion.html">Colección</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle nav-option" href="#" id="navbarDropdown" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Paginas
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item nav-option" href="categorias.html"> Categorias</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item nav-option" href="testimonioConta.html">Testimonios y Estadisticas</a></li>
+            <li><a class="dropdown-item nav-option" href="objeto3d.html">Figura 3D</a></li>
+            <li>
+              <a class="dropdown-item nav-option" href="encuesta.html">Encuesta</a>
+            </li>
+            <li>
+              <a class="dropdown-item nav-option" href="sobreNosotros.html">Sobre Nosotros</a>
+            </li>
+          </ul>
+        </li>
+        <li><a class="nav-option" href="landing.html">Proyectos</a></li>
+        <li><a class="nav-option" href="index.html">Salir</a></li>
+      </ul>
+      <div class="icon-container d-flex">
+        <select id="language-select" class="form-select mx-4" aria-label="Cambiar idioma">
+          <option value="es" selected>Español</option>
+          <option value="en">English</option>
+        </select>
+        <a href="carrito.html" class="icon" aria-label="Ir al carrito">
+          <i class="uil uil-shopping-cart-alt"></i>
+        </a>
+        <a href="buscadorPrendas.html" class="icon" aria-label="Buscar prendas">
+          <i class="uil uil-search"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1 class="text-center pt-5">Comprobante de Pedido</h1>
+    <div id="resumen-pedido" class="mt-4">
+      <!-- Aquí se mostrará el resumen del pedido -->
+    </div>
+    <div id="recibo-pago" class="receipt mt-4">
+      <!-- Aquí se mostrará el recibo de pago -->
+    </div>
+    <div class="text-center mt-4">
+      <a href="tienda.html" class="btn btn-primary">Seguir Comprando</a>
+    </div>
+  </div>
+  <a href="./asset/Manual.pdf" class="boton boton-mas-largo mt-5" download="manual.pdf">
+    Manual Instrucciones
+  </a>
+
+  <div class="pt-140"></div>
+
+  <footer class="p-4 text-center fondo1">
+    <h4>© 2024 Boutique. Todos los derechos reservados.</h2>
+  </footer>
+  <script src="js/factura.js"></script> <!-- Enlace al archivo JS -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+
+</html>
